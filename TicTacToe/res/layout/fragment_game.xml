@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetButton"
+            android:hint="@string/reset_button"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/highscoreButton"
+            android:hint="@string/save_score_button"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newGameButton"
+            android:hint="@string/new_game_button"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:background="@drawable/txt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_player_one"
+            android:layout_weight="1"
+            android:hint="@string/player_one"
+            android:textAlignment="center"
+            android:textColor="@color/colorGold"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:background="@drawable/txt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_player_two"
+            android:layout_weight="1"
+            android:hint="@string/player_two"
+            android:textAlignment="center"
+            android:textColor="@color/colorGold"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
